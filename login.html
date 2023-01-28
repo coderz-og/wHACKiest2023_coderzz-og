@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="logincss.css" />
+    <link rel="icon" type="image/jpg" href="sportify-logo.png" />
+    <script>
+      function redirect(event) {
+        event.preventDefault();
+        window.location.href = "htmlcode.html";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to SPORTIFY &COPY;</h1>
+      <img src="sportify-logo.png" alt="logo" class="center" />
+      <form id="loginForm" method="post" onsubmit="redirect(event)">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          required
+        />
+        <br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+        <br />
+        <input type="submit" value="Login" class="btn" />
+      </form>
+
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+  </body>
+</html>
