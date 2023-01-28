@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="csscode.css" />
+    <div><title>Fitness Rewards Store</title></div>
+  </head>
+  <body>
+    <h1>Fitness Rewards Store</h1>
+    <p>
+      Welcome to our store! Here, you can use your points earned from our
+      fitness app to purchase rewards.
+    </p>
+    <script>
+      var userPoints = prompt("Enter your available points: ");
+      var item1Points = 50;
+      var item2Points = 200;
+      var item3Points = 220;
+      var item4Points = 250;
+      var item5Points = 300;
+      var item6Points = 320;
+      var item7Points = 350;
+      var item8Points = 500;
+
+      function checkPoints(itemPoints) {
+        if (userPoints >= itemPoints) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+    <ul>
+      <li>
+        <h3><center>$25 GIFT CARD</center></h3>
+        <img
+          src="https://justpaintbynumber.com/wp-content/uploads/2021/08/Gift-Card.jpg"
+          alt="Item 1"
+        />
+        <p>
+          Buy a $25 gift-card from our rewards store and use it at your nearest
+          store!
+
+          <br /><br /><br /><br /><br />
+        </p>
+        <br /><br />
+        <center><h3>Cost in points: 50</h3></center>
+
+        <button
+          onclick="if (checkPoints(item1Points)) { 
+          
+          window.location.href = 'HTML2.html'; 
+        } else { 
+          alert('You do not have enough points'); 
+        }"
+        >
+          <a style="text-decoration: none" href="#">Purchase</a>
+        </button>
+      </li>
+
+      <li>
+        <h3><center>FITNESS WATCH</center></h3>
+        <img
+          src="https://images-cdn.ubuy.co.in/633ff3945028962f031aa050-smart-watch-2021-ver-watches-for-men.jpg"
+          alt="Item 2"
+        />
+        <br />
+        <p>
+          Track and monitor your physical activities and overall fitness levels
+        </p>
+        <p>
+          <center><h3>Cost in points: 200</h3></center>
+        </p>
+        <button
+          onclick="if (checkPoints(item2Points)) { 
+        
+        window.location.href = 'HTML2.html'; 
+      } else { 
+        alert('You do not have enough points'); 
+      }"
+        >
+          <a style="text-decoration: none" href="#">Purchase</a>
+        </button>
+      </li>
+      <li>
+        <h3><center>BICYCLE</center></h3>
+        <img
+          src="https://www.firefoxbikes.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-HeroFirefox-Library/default/dw0b065e0a/Hulk-bike-kid.png?sh=280&sfrm=png&q=70"
+          alt="Item 3"
+        />
+        <p>
+          Win a cycle worth $450 which provides a low-impact cardiovascular
+          workout
+        </p>
+        <br />
+        <br /><br /><br />
+        <center><h3>Cost in points: 220</h3></center>
+        <button
+          onclick="if (checkPoints(item3Points)) { 
+        
+        window.location.href = 'HTML2.html'; 
+      } else { 
+        alert('You do not have enough points'); 
+      }"
+        >
+          <a style="text-decoration: none" href="#">Purchase</a>
+        </button>
+      </li>
+
+      <li>
+        <h3><center>WHEY</center></h3>
+        <img
+          src="https://images-cdn.ubuy.co.in/633ab03e74c2845e79396ba3-optimum-nutrition-gold-standard-100.jpg"
+          alt="Item 4"
+        />
+        <p>
+          A dietary supplement used by athletes, bodybuilders, and fitness
+          enthusiasts to build and repair muscle tissues.
+        </p>
+
+        <center><h3>Cost in points: 250</h3></center>
+        <button
+          onclick="if (checkPoints(item4Points)) { 
+        
+        window.location.href = 'HTML2.html'; 
+      } else { 
+        alert('You do not have enough points'); 
+      }"
+        >
+          <a style="text-decoration: none" href="#">Purchase</a>
+        </button>
+      </li>
+      <li>
+        <h3><center>FREE BUS TICKET</center></h3>
+        <img
+          src="https://img.freepik.com/premium-vector/bus-ticket-passenger-transport-vehicle_101087-683.jpg?w=2000"
+          alt="Item 5"
+        />
+        <p>
+          Earn a free bus ticket to any location within 300km from your place!
+        </p>
+        <br /><br />
+        <center><h3>Cost in points: 300</h3></center>
+
+        <button
+          onclick="if (checkPoints(item5Points)) { 
+          
+          window.location.href = 'HTML2.html'; 
+        } else { 
+          alert('You do not have enough points'); 
+        }"
+        >
+          <a style="text-decoration: none" href="#">Purchase</a>
+        </button>
+      </li>
+      <li>
+        <h3><center>EXCLUSIVE MERCHES</center></h3>
+        <img
+          src="https://assets.capitalxtra.com/2019/08/migos-merch-1551354978-view-0.png"
+          alt="Item 6"
+        />
+        <p>Our all new collection of merches will make you feel exhilarated!</p>
+        <br /><br /><br /><br /><br /><br /><br />
+        <center><h3>Cost in points: 320</h3></center>
+
+        <button
+          onclick="if (checkPoints(item6Points)) { 
+          
+          window.location.href = 'HTML2.html'; 
+        } else { 
+          alert('You do not have enough points'); 
+        }"
+        >
+          <a style="text-decoration: none" href="#">Purchase</a>
+        </button>
+      </li>
+      <li>
+        <h3><center>TREADMILL</center></h3>
+        <img
+          src="https://m.media-amazon.com/images/I/61jTo5c6NTL._SX425_.jpg"
+          alt="Item 7"
+        />
+        <p>
+          Cardio exercises can be done well within the comfort of your home with
+          our branded treadmill
+        </p>
+        <br /><br />
+        <center><h3>Cost in points: 350</h3></center>
+
+        <button
+          onclick="if (checkPoints(item7Points)) { 
+        
+        window.location.href = 'HTML2.html'; 
+      } else { 
+        alert('You do not have enough points'); 
+      }"
+        >
+          <a style="text-decoration: none" href="#">Purchase</a>
+        </button>
+      </li>
+      <li>
+        <h3><center>5 STAR HOTEL ROOM</center></h3>
+        <img
+          src="https://media.istockphoto.com/id/1066999762/photo/3d-rendering-beautiful-luxury-bedroom-suite-in-hotel-with-tv.jpg?s=612x612&w=0&k=20&c=kh1SoNvZYDdAFOadeKxPVssVKVzbMTIuOHQu-RBDoX0="
+          alt="Item 8"
+        />
+        <p>
+          Win a stay at any 5-star resort for a night with exciting ameniti56
+          es!
+        </p>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <center><h3>Cost in points: 500</h3></center>
+
+        <button
+          onclick="if (checkPoints(item8Points)) { 
+        
+        window.location.href = 'HTML2.html'; 
+      } else { 
+        alert('You do not have enough points'); 
+      }"
+        >
+          <a style="text-decoration: none" href="#">Purchase</a>
+        </button>
+      </li>
+    </ul>
+    <div><h2>Stay tuned for more new rewards!</h2></div>
+    <footer><h3>&copy SPORTIFY</h3></footer>
+  </body>
+</html>
